@@ -5,7 +5,8 @@ from first_app.forms import NewUserForm
 # Create your views here.
 
 def index(request):
-    return render(request,'first_app/index.html')
+    context_dict = {'text':'hello world','number':100}
+    return render(request,'first_app/index.html',context_dict)
 
 def users(request):
 

@@ -2,4 +2,6 @@
 {% extends "first_app/base.html" %}
   {% block body_block %}
     <h1>Welcome to the Homepage!</h1>
+    <h1>{{ text|cut:'hello' }} :cut filter used, bye bye 'hello!'</h1>
+    <h1>{{ number|add:'99' }}</h1>
   {% endblock %}
