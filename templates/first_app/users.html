@@ -2,23 +2,24 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>users</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   </head>
   <body>
-    <h1>here are your users:</h1>
-    {% if users %}
+    <div class="container">
+      <h1>Please sign up here:</h1>
+      
 
-    <ol>
-      {%for person in users %}
-      <li>User Info</li>
-      <ul>
-        <li>First Name: {{ person.first_name}}</li>
-        <li>Last Name: {{ person.last_name}}</li>
-        <li>Email: {{ person.email}}</li>
-      </ul>
-      {% endfor %}
-    </ol>
+        <form method="post">
+          {{ form.as_p }}
+          {% csrf_token %}
+          <input type="submit" name="btn btn-primary" value="Submit">
+        </form>
 
-    {% endif %}
+
+
+    </div>
   </body>
 </html>
