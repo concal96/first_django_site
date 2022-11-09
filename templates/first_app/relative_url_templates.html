@@ -6,7 +6,9 @@
   </head>
   <body>
     <h1>welcome to relative urls</h1>
-    <a href="{% url 'first_app:other' %}"></a>
+    <a href="{% url 'first_app:other' %}">The other page!</a> <!-- WATCH OUT FOR SPACES HERE -->
+    <a href="{% url 'admin:index' %}">ADMIN PAGE</a>
+    <a href="{% url 'index' %}">Home</a>
 
   </body>
 </html>
