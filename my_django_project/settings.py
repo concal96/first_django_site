@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-*myfh*y_fkb&lat7ipaij=05*y7fd%3u3)c=k2=1-4$urd4z6)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['concal.pythonanywhere.com',]
 
 
 # Application definition
